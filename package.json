@@ -1,0 +1,24 @@
+{
+  "name": "Typescript-BlockChain-Exemple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juliapp/Typescript-BlockChain-Exemple.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juliapp/Typescript-BlockChain-Exemple/issues"
+  },
+  "homepage": "https://github.com/Juliapp/Typescript-BlockChain-Exemple#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.34",
+    "typescript": "^4.2.3"
+  }
+}
