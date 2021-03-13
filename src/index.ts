@@ -7,12 +7,25 @@ class Transaction {
     public payee: string
   ){}
 
-  toString(){
-    return JSON.stringify(this)
+  toString() {
+    return JSON.stringify(this);
   }
 }
 
-class Block {}
+class Block {
+  constructor(
+    public prevHash: string,
+    public transaction: Transaction,
+    public ts = Date.now()
+  ){}
+
+  get hash() {
+    const str = JSON.stringify(this);
+    const hash = crypto.createHash('SHA256');
+    hash.update(str).end()
+    return hash.digest('hex')
+  }
+}
 
 class Chain {}
 
